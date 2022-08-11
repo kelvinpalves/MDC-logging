@@ -18,7 +18,7 @@ public class FeatureAService implements FeatureAPort {
     @Override
     public void execute() {
 
-        MDC.put("featureA", UUID.randomUUID().toString());
+        MDC.put("featureA", "FEATURE_A_ID");
 
         log.info("Executing feature A. {}", MDC.getCopyOfContextMap());
 

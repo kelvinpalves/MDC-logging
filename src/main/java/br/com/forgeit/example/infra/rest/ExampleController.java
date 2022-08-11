@@ -20,7 +20,7 @@ public class ExampleController {
     @GetMapping("/test")
     public void test() {
         final var requestID = UUID.randomUUID().toString();
-        MDC.put("requestID", requestID);
+        MDC.put("requestID", "CONTROLLER_ID");
 
         log.info("Executing controller. {}", MDC.getCopyOfContextMap());
 

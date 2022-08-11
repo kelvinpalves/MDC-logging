@@ -13,7 +13,7 @@ public class FeatureBService implements FeatureBPort {
     @Override
     public void execute() {
 
-        MDC.put("featureB", UUID.randomUUID().toString());
+        MDC.put("featureB", "FEATURE_B_ID");
 
         log.info("Executing feature B. {}", MDC.getCopyOfContextMap());
 
